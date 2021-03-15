@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Study_1
 {
@@ -6,6 +6,9 @@ namespace Study_1
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Привет");
+            Console.ReadLine();
+
             ///СТРОКИ
             
             ///Вывод текста
@@ -81,8 +84,60 @@ namespace Study_1
             double radius = 2.50;
             double area = Math.PI * radius * radius;
             Console.WriteLine(area);
+            Console.WriteLine();
 
             ///ВЕТВИ И ЦИКЛЫ
+
+            ///Принятие решений с помощью оператора if
+            int ff_1 = 5;
+            int ff_2 = 8;
+            int ff_3 = 1;
+            if (ff_1 + ff_2 > 10)
+                Console.WriteLine("Ответ правильный");
+            ///Объединение операторов if и else
+            if (ff_1 + ff_3 > 10)
+            {
+                Console.WriteLine("Иф");
+            }
+            else
+            {
+                Console.WriteLine("Элс");
+            }
+            /// && - and; || - or
+            ///Использование циклов для повторения операций
+            int counter = 0;
+            while (counter < 10)
+            {
+                Console.WriteLine($"Каунтер теперь {counter}");
+                counter++;
+            }
+
+            int counter_1 = 0;
+            do
+            {
+                Console.WriteLine($"Каунтер от do теперь {counter_1}");
+                counter_1++;
+            } while (counter_1 <= 5);
+            ///Работа с циклом for
+            for(int counter_2 = 11; counter_2 > 10 && counter_2 < 15; counter_2++)
+            {
+                Console.WriteLine($"Каунтер 2 = {counter_2}");
+            }
+            ///Объединение ветвей и циклов
+            int c_sum = 0;
+            for (int counter_del_3 = 1; counter_del_3 < 21; counter_del_3++)
+            {
+                if (counter_del_3 % 3 == 0)
+                {
+                    c_sum = c_sum + counter_del_3;
+                }
+            }
+            Console.WriteLine(c_sum);
+
+            ///КОЛЛЕКЦИЯ СПИСКОВ 
+
+            ///Создание списков
+            
         }
     }
 }
